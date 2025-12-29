@@ -1,0 +1,13 @@
+# Environment variables
+.env
+
+# Claude Code
+.claude
+
+# Node dependencies
+node_modules/
+
+# App-generated data
+data/
+logs/
+out/

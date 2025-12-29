@@ -1,0 +1,27 @@
+{
+  "name": "youtubetollm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pull": "tsx src/pull.ts links.txt",
+    "summarize": "tsx src/summarize.ts",
+    "run": "npm run pull && npm run summarize",
+    "run:force": "rm -rf out logs && npm run pull && npm run summarize"
+  },
+  "keywords": [],
+  "author": "Richard <hinsonrwdev@gmail.com>",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "openai": "^6.15.0",
+    "promises": "^0.2.5",
+    "youtube-transcript-api": "^3.0.6",
+    "zod": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
